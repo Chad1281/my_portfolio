@@ -4,6 +4,7 @@
 
 html {
     font-size: 100%;
+    height: 100%;
 }
 
 header, html {
@@ -59,25 +60,61 @@ nav a {
     padding: 5px 10px 0px 0px;
 }
 
-section {
-    display: flex;
-    color: black;
-    margin: 20px;
-}
-
-section h2 {
-
-
-}
-
-#about {
-    height: 50vh;
+main {
+    height: 100vh;
     width: 100%;
-    background-image: url(/assets/images/dublin_bw.jpg);
+    background-image: url("../images/dublin_bw.png");
     background-size: cover;
     background-position: center;
-    
+    position: sticky;
+    position: -webkit-sticky;
 }
+
+section {
+    display: flex;
+}
+
+#about { 
+    border: 8px solid green;
+    border-radius: 10px;
+    position: absolute;
+    padding: 10px;
+    margin: 80vh 20vh 30vh 20vh;
+}
+
+#about h2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: bold;
+    color: gold;
+    width: 120px;
+    margin: -2.7rem 1rem;
+    background-color: green;
+    border-radius: 12px 12px 0px 0px;
+    padding-bottom: 0px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(41, 31, 0);
+    border: 5px solid gold;
+    border-radius: 10px;
+    background-color: rgba(252, 229, 102, 0.6);
+    padding: 10px;
+}
+
+/* #about img { 
+    height: 40vh;
+    width: 35vh;
+    position: absolute;
+    top: 30vh;
+    left: 20vw;
+    z-index: 2;
+}*/
 
 
 
